@@ -12,7 +12,7 @@
   <body>
   <p>
   <% if @current_user %>
-  Hi, <%= @current_user["Username"] %> |
+  Hi, <%= @current_user["email"] %> |
   <a href="/logout" class="btn btn-default">Logout</a>
         <% else %>
           <a href="/login" class="btn btn-default">Login</a> |
