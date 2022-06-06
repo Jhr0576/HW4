@@ -26,3 +26,4 @@ class PlacesController < ApplicationController
 
 end
 
+
