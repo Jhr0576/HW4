@@ -10,6 +10,12 @@
   </head>
 
   <body>
+  <p>
+  <% if @current_user %>
+  Hi, <%= @current_user["Username"] %>
+  <% end %>
+  </p>
+
     <div>
       <%= flash["notice"] %>
     </div>
@@ -22,4 +28,5 @@
 
     <%= yield %>
   </body>
+  
 </html>
