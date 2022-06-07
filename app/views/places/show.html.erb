@@ -9,6 +9,11 @@
   <p><%= post["description"] %></p>
 <% end %>
 
+<ul>
+<% if @posts.uploaded_image.attached? %>
+<img src="<%=post["image"]%>"
+</ul>
+
 <p>
   <a href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
 </p>
