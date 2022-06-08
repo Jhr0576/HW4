@@ -12,3 +12,4 @@ class UsersController < ApplicationController
     redirect_to "/places"
   end
 end
+
